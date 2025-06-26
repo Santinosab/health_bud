@@ -1,0 +1,46 @@
+/* src/App.css */
+:root {
+  --green-primary: #28a745;
+  --green-hover: #218838;
+  --green-light-bg: #f0fdf4;
+  --green-icon-bg: #d1fae5;
+  --green-icon-color: #108934;
+  --text-dark: #212529;
+  --text-light: #495057;
+  --white-bg: #ffffff;
+  --gray-footer-bg: #212529;
+  --gray-footer-text: #adb5bd;
+  --border-color: #dee2e6;
+}
+
+/* --- ESTRUCTURA PRINCIPAL CON CSS GRID --- */
+.appWrapper {
+  display: grid; /* Reemplazo de flex */
+  grid-template-rows: auto 1fr auto; /* Define 3 filas: header (auto), main (1fr), footer (auto) */
+  min-height: 100vh; /* Ocupa al menos el 100% del alto de la pantalla */
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--white-bg);
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
+}
